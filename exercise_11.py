@@ -7,14 +7,16 @@
 # For example, If the given int is 7536, the output shall be “6 3 5 7“, with a space separating the digits.
 
 #function containing while loop
-def extract_digits_reverse(num):
-    reversed_digits = []
+def reverse_order(num):
+    reversed_number = []
 
     while num > 0:
         digit = num % 10
-        reversed_digits.append(digit)
+        reversed_number.append(digit)
         num = num // 10
 
-    print(" ".join(map(str, reversed_digits)))
+    print(" ".join(map(str, reversed_number)))
     
 # check by printing the variable
+input_number = 7536
+reverse_order(input_number)
